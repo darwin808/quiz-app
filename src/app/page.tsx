@@ -74,66 +74,74 @@ export default function Home() {
     setquestion(q);
   }, [currentNumber]);
 
+  useEffect(() => {
+    if (answers.length !== 0 && !question) {
+      setresults(true);
+    }
+  }, [answers, question]);
+
   if (results) {
     return <ResultsComp answers={answers} />;
   }
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white text-black">
       <h1 className="text-black text-4xl text-center">Quiz App</h1>
-      <div>
-        <h2 className="text-2xl text-center text-gray-700 my-4">
-          {question?.question_id} {question?.question_text}
-        </h2>
-        <div className="flex flex-col gap-3 w-full px-4 my-8">
-          {question?.choices.map((e) => {
-            return (
-              <div key={e.choice_id} className="w-full">
-                <p>
-                  <button
-                    onClick={() => {
-                      setlocalAnswer(e);
-                    }}
-                    className={
-                      localAnswer?.choice_id === e.choice_id
-                        ? "btn btn-accent w-full text-start"
-                        : "btn btn-outline w-full text-start"
-                    }
-                  >
-                    {e.choice_text}
-                  </button>
-                </p>
-              </div>
-            );
-          })}
-        </div>
-
+      {question && (
         <div>
-          <button
-            disabled={localAnswer?.choice_id ? false : true}
-            className="btn btn-secondary w-full"
-            onClick={() => {
-              setCurrentNumber(currentNumber + 1);
+          <h2 className="text-2xl text-center text-gray-700 my-4">
+            {question?.question_id} {question?.question_text}
+          </h2>
+          <div className="flex flex-col gap-3 w-full px-4 my-8">
+            {question?.choices.map((e) => {
+              return (
+                <div key={e.choice_id} className="w-full">
+                  <p>
+                    <button
+                      onClick={() => {
+                        setlocalAnswer(e);
+                      }}
+                      className={
+                        localAnswer?.choice_id === e.choice_id
+                          ? "btn btn-accent w-full text-start"
+                          : "btn btn-outline w-full text-start"
+                      }
+                    >
+                      {e.choice_text}
+                    </button>
+                  </p>
+                </div>
+              );
+            })}
+          </div>
 
-              setlocalAnswer(null);
-              if (question) {
-                setAnswers([
-                  ...answers,
-                  {
-                    question_id: question?.question_id || 0,
-                    choice_text: localAnswer?.choice_text || "",
-                    choice_id: localAnswer?.choice_id || "",
-                    correct_answer: question.correct_answer || "",
-                  },
-                ]);
-              } else {
-                setresults(true);
-              }
-            }}
-          >
-            Next Question
-          </button>
+          <div>
+            <button
+              disabled={localAnswer?.choice_id ? false : true}
+              className="btn btn-secondary w-full"
+              onClick={() => {
+                setCurrentNumber(currentNumber + 1);
+
+                setlocalAnswer(null);
+                if (question) {
+                  setAnswers([
+                    ...answers,
+                    {
+                      question_id: question?.question_id || 0,
+                      choice_text: localAnswer?.choice_text || "",
+                      choice_id: localAnswer?.choice_id || "",
+                      correct_answer: question.correct_answer || "",
+                    },
+                  ]);
+                } else {
+                  setresults(true);
+                }
+              }}
+            >
+              Next Question
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </main>
   );
 }
