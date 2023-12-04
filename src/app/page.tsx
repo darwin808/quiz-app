@@ -3,7 +3,26 @@
 import { useEffect, useState } from "react";
 import { sample as testData } from "./constant";
 
-const sample = testData;
+function shuffle(array: Question[]) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+
+const sample = shuffle(testData.questions).map((e, i) => {
+  return { ...e, question_id: i + 1 };
+});
 
 type Choice = {
   choice_id: string;
@@ -68,7 +87,7 @@ export default function Home() {
 
   useEffect(() => {
     const q =
-      sample.questions.find((e) => {
+      sample.find((e) => {
         return e.question_id === currentNumber;
       }) || null;
     setquestion(q);

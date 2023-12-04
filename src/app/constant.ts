@@ -729,11 +729,11 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 32,
-      question_text: "Calculate 48 - 19.",
+      question_text: "Calculate 9 x 9 ",
       choices: [
         {
           choice_id: "A",
-          choice_text: "27",
+          choice_text: "81",
         },
         {
           choice_id: "B",
