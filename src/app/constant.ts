@@ -752,7 +752,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 33,
-      question_text: "What is the product of 8 multiplied by 6?",
+      question_text: "What is the product of 8 x 6 = ?",
       choices: [
         {
           choice_id: "A",
@@ -798,7 +798,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 35,
-      question_text: "What is the value of 4 squared?",
+      question_text: "What is the value of 4 x 4 = ?",
       choices: [
         {
           choice_id: "A",
@@ -890,26 +890,26 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 39,
-      question_text: "Find the missing number: 1 + 1 = __.",
+      question_text: "Find the missing number: 1 + 99 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "1099",
+          choice_text: "101",
         },
         {
           choice_id: "B",
-          choice_text: "11222",
+          choice_text: "100",
         },
         {
           choice_id: "C",
-          choice_text: "11",
+          choice_text: "201",
         },
         {
           choice_id: "D",
-          choice_text: "2",
+          choice_text: "100.5",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "B",
     },
     {
       question_id: 40,
@@ -959,7 +959,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 42,
-      question_text: "What is the product of 7 multiplied by 9?",
+      question_text: "What is the product of 7 x 9 =?",
       choices: [
         {
           choice_id: "A",
@@ -1028,11 +1028,11 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 45,
-      question_text: "Calculate 48 ÷ 6.",
+      question_text: "Calculate 10 ÷ 10= ?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "6",
+          choice_text: "1",
         },
         {
           choice_id: "B",
