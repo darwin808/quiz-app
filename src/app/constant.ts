@@ -1074,26 +1074,26 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 47,
-      question_text: "Find the missing number: 9 + 6 = __.",
+      question_text: "Find the missing number: 9 x 10 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "15",
+          choice_text: "150",
         },
         {
           choice_id: "B",
-          choice_text: "16",
+          choice_text: "160",
         },
         {
           choice_id: "C",
-          choice_text: "17",
+          choice_text: "90",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "89",
         },
       ],
-      correct_answer: "A",
+      correct_answer: "D",
     },
     {
       question_id: 48,
