@@ -1051,7 +1051,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 46,
-      question_text: "Solve: 6 + (4 × 5) - 3.",
+      question_text: "Solve: 6 - 3.",
       choices: [
         {
           choice_id: "A",
@@ -1059,18 +1059,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "18",
+          choice_text: "1",
         },
         {
           choice_id: "C",
-          choice_text: "19",
+          choice_text: "2",
         },
         {
           choice_id: "D",
-          choice_text: "20",
+          choice_text: "3",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "D",
     },
     {
       question_id: 47,
