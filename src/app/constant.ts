@@ -1375,7 +1375,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 60,
-      question_text: "What is the sum of 9+9?",
+      question_text: "What is the sum of 99*9?",
       choices: [
         {
           choice_id: "A",
@@ -1383,18 +1383,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "22",
+          choice_text: "821",
         },
         {
           choice_id: "C",
-          choice_text: "23",
+          choice_text: "891",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "921",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "C",
     },
   ],
 };
