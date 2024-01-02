@@ -1051,7 +1051,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 46,
-      question_text: "Solve: 6 + (4 × 5) - 3.",
+      question_text: "Solve: 6 - 3.",
       choices: [
         {
           choice_id: "A",
@@ -1059,18 +1059,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "18",
+          choice_text: "1",
         },
         {
           choice_id: "C",
-          choice_text: "19",
+          choice_text: "2",
         },
         {
           choice_id: "D",
-          choice_text: "20",
+          choice_text: "3",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "D",
     },
     {
       question_id: 47,
@@ -1144,7 +1144,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 50,
-      question_text: "Calculate 75 - 29.",
+      question_text: "Calculate 74 - 75.",
       choices: [
         {
           choice_id: "A",
@@ -1152,18 +1152,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "46",
+          choice_text: "1",
         },
         {
           choice_id: "C",
-          choice_text: "48",
+          choice_text: "-1",
         },
         {
           choice_id: "D",
-          choice_text: "50",
+          choice_text: "0",
         },
       ],
-      correct_answer: "A",
+      correct_answer: "C",
     },
     {
       question_id: 51,
@@ -1352,30 +1352,30 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 59,
-      question_text: "What is the sum of 7+7?",
+      question_text: "What is  7x77?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "5",
+          choice_text: "514",
         },
         {
           choice_id: "B",
-          choice_text: "9",
+          choice_text: "539",
         },
         {
           choice_id: "C",
-          choice_text: "14",
+          choice_text: "714",
         },
         {
           choice_id: "D",
-          choice_text: "6",
+          choice_text: "76",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "B",
     },
     {
       question_id: 60,
-      question_text: "What is the sum of 9+9?",
+      question_text: "What is 99x9?",
       choices: [
         {
           choice_id: "A",
@@ -1383,18 +1383,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "22",
+          choice_text: "821",
         },
         {
           choice_id: "C",
-          choice_text: "23",
+          choice_text: "891",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "921",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "C",
     },
   ],
 };
