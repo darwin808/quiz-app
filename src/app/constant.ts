@@ -1047,7 +1047,7 @@ export const sample: QuestionsData = {
           choice_text: "9",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 46,
