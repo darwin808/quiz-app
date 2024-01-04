@@ -1263,7 +1263,7 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "16",
+          choice_text: "20",
         },
         {
           choice_id: "B",
@@ -1278,7 +1278,7 @@ export const sample: QuestionsData = {
           choice_text: "19",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 56,
