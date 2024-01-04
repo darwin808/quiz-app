@@ -1282,26 +1282,26 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 56,
-      question_text: "Find the missing number: 8 + 9 = __.",
+      question_text: "Find the missing number: 8 + 99 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "15",
+          choice_text: "151",
         },
         {
           choice_id: "B",
-          choice_text: "16",
+          choice_text: "167",
         },
         {
           choice_id: "C",
-          choice_text: "17",
+          choice_text: "107",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "111",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "C",
     },
     {
       question_id: 57,
