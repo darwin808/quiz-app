@@ -1213,23 +1213,23 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 53,
-      question_text: "What is the value of 7 squared?",
+      question_text: "What is the value of 12 squared?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "42",
+          choice_text: "142",
         },
         {
           choice_id: "B",
-          choice_text: "45",
+          choice_text: "145",
         },
         {
           choice_id: "C",
-          choice_text: "49",
+          choice_text: "144",
         },
         {
           choice_id: "D",
-          choice_text: "56",
+          choice_text: "156",
         },
       ],
       correct_answer: "C",
