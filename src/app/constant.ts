@@ -871,7 +871,7 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "10",
+          choice_text: "100",
         },
         {
           choice_id: "B",
