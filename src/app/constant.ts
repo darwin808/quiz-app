@@ -4,96 +4,95 @@ export const sample: QuestionsData = {
   questions: [
     {
       question_id: 1,
-      question_text: "What is the opposite of 'happy'?",
+      question_text: "What is the result of 8 ÷ 2 * 4?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Sad",
+          choice_text: "16",
         },
         {
           choice_id: "B",
-          choice_text: "Excited",
+          choice_text: "4",
         },
         {
           choice_id: "C",
-          choice_text: "Joyful",
+          choice_text: "10",
         },
         {
           choice_id: "D",
-          choice_text: "Angry",
+          choice_text: "12",
         },
       ],
       correct_answer: "A",
     },
     {
       question_id: 2,
-      question_text: "Which word means 'a large body of water'?",
+      question_text: "What is the result of 5 + 3 * 2 - 4 ÷ 2?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Ocean",
+          choice_text: "9",
         },
         {
           choice_id: "B",
-          choice_text: "Mountain",
+          choice_text: "10",
         },
         {
           choice_id: "C",
-          choice_text: "Forest",
+          choice_text: "8",
         },
         {
           choice_id: "D",
-          choice_text: "Desert",
+          choice_text: "7",
         },
       ],
       correct_answer: "A",
     },
     {
       question_id: 3,
-      question_text: "Identify the verb in the sentence: 'The cat sleeps.'",
+      question_text: "What is the result of 12 - 3 * 2 + 8 ÷ 4?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Cat",
+          choice_text: "10",
         },
         {
           choice_id: "B",
-          choice_text: "Sleeps",
+          choice_text: "9",
         },
         {
           choice_id: "C",
-          choice_text: "The",
+          choice_text: "8",
         },
         {
           choice_id: "D",
-          choice_text: "None",
+          choice_text: "6",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "C",
     },
     {
       question_id: 4,
-      question_text:
-        "Choose the correct form of the verb: 'She ____ to school every day.'",
+      question_text: "Choose the correct spelling:",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Goes",
+          choice_text: "Recieve",
         },
         {
           choice_id: "B",
-          choice_text: "Go",
+          choice_text: "Receive",
         },
         {
           choice_id: "C",
-          choice_text: "Went",
+          choice_text: "Receve",
         },
         {
           choice_id: "D",
-          choice_text: "Gone",
+          choice_text: "Recive",
         },
       ],
-      correct_answer: "A",
+      correct_answer: "B",
     },
     {
       question_id: 5,
@@ -101,11 +100,11 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "Childs",
+          choice_text: "Childes",
         },
         {
           choice_id: "B",
-          choice_text: "Childen",
+          choice_text: "Childs",
         },
         {
           choice_id: "C",
@@ -113,34 +112,35 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "D",
-          choice_text: "Childs",
+          choice_text: "Childies",
         },
       ],
       correct_answer: "C",
     },
     {
       question_id: 6,
-      question_text: "Which word means 'opposite of old'?",
+      question_text: "Choose the correct sentence:",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Ancient",
+          choice_text: "He goed to the store yesterday.",
         },
         {
           choice_id: "B",
-          choice_text: "Young",
+          choice_text: "She runned quickly in the race.",
         },
         {
           choice_id: "C",
-          choice_text: "Elderly",
+          choice_text: "They sings beautifully.",
         },
         {
           choice_id: "D",
-          choice_text: "Aged",
+          choice_text: "We ate dinner at 8 o'clock.",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "D",
     },
+
     {
       question_id: 7,
       question_text: "Identify the adverb in the sentence: 'She runs quickly.'",
