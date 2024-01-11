@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { sample as testData } from "./constant";
+import dayjs from "dayjs";
 
 function shuffle(array: Question[]) {
   let currentIndex = array.length,
@@ -65,7 +66,8 @@ const ResultsComp = ({ answers }: { answers: Answers[] }) => {
     <div className="min-h-screen bg-white">
       <h1 className="text-3xl text-black text-center">{displayText}</h1>
       <h1 className="text-xl text-black text-center">
-        Score: {JSON.stringify(score)}
+        Score: {JSON.stringify(score)}{" "}
+        {dayjs().format("dddd, MMMM D, YYYY h:mm A")}
       </h1>
     </div>
   );
@@ -77,12 +79,12 @@ export default function Home() {
 
   const [localAnswer, setlocalAnswer] = useState<Choice | null>(null);
   const [answers, setAnswers] = useState<
-    | {
-        question_id: number;
-        choice_text: string;
-        choice_id: string;
-        correct_answer: string;
-      }[]
+    {
+      question_id: number;
+      choice_text: string;
+      choice_id: string;
+      correct_answer: string;
+    }[]
   >([]);
 
   useEffect(() => {
