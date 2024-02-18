@@ -4,11 +4,11 @@ export const sample: QuestionsData = {
   questions: [
     {
       question_id: 1,
-      question_text: "What is the result of 8 ÷ 2 * 4?",
+      question_text: "What is the result of 8 * 7?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "16",
+          choice_text: "48",
         },
         {
           choice_id: "B",
@@ -867,11 +867,11 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 38,
-      question_text: "Find the missing number: 7 + 5 = __.",
+      question_text: "Find the missing number: 7 x 5 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "100",
+          choice_text: "35",
         },
         {
           choice_id: "B",
@@ -886,11 +886,11 @@ export const sample: QuestionsData = {
           choice_text: "13",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 39,
-      question_text: "Find the missing number: 1 + 99 = __.",
+      question_text: "Find the missing number: 1 + 98 = __.",
       choices: [
         {
           choice_id: "A",
@@ -898,7 +898,7 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "100",
+          choice_text: "99",
         },
         {
           choice_id: "C",
@@ -959,11 +959,11 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 42,
-      question_text: "What is the product of 7 x 9 =?",
+      question_text: "What is the product of 7 x 7 =?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "63",
+          choice_text: "49",
         },
         {
           choice_id: "B",
@@ -1005,7 +1005,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 44,
-      question_text: "What is the value of 6 squared?",
+      question_text: "What is the value of 15 squared?",
       choices: [
         {
           choice_id: "A",
@@ -1013,11 +1013,11 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "34",
+          choice_text: "100",
         },
         {
           choice_id: "C",
-          choice_text: "36",
+          choice_text: "225",
         },
         {
           choice_id: "D",
@@ -1028,19 +1028,19 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 45,
-      question_text: "Calculate 10 ÷ 10= ?",
+      question_text: "Calculate 120 ÷ 10= ?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "1",
+          choice_text: "12",
         },
         {
           choice_id: "B",
-          choice_text: "7",
+          choice_text: "11",
         },
         {
           choice_id: "C",
-          choice_text: "8",
+          choice_text: "13",
         },
         {
           choice_id: "D",
@@ -1051,7 +1051,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 46,
-      question_text: "Solve: 6 - 3.",
+      question_text: "Solve: 109 - 3.",
       choices: [
         {
           choice_id: "A",
@@ -1059,26 +1059,26 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "1",
+          choice_text: "99",
         },
         {
           choice_id: "C",
-          choice_text: "2",
+          choice_text: "109",
         },
         {
           choice_id: "D",
-          choice_text: "3",
+          choice_text: "106",
         },
       ],
       correct_answer: "D",
     },
     {
       question_id: 47,
-      question_text: "Find the missing number: 9 x 10 = __.",
+      question_text: "Find the missing number: 9 x 12 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "150",
+          choice_text: "108",
         },
         {
           choice_id: "B",
@@ -1093,7 +1093,7 @@ export const sample: QuestionsData = {
           choice_text: "89",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 48,
@@ -1106,22 +1106,22 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "14",
+          choice_text: "15",
         },
         {
           choice_id: "C",
-          choice_text: "15",
+          choice_text: "14",
         },
         {
           choice_id: "D",
           choice_text: "16",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "B",
     },
     {
       question_id: 49,
-      question_text: "What is the sum of 22 + 38?",
+      question_text: "What is the sum of 22 + 39?",
       choices: [
         {
           choice_id: "A",
@@ -1133,7 +1133,7 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "C",
-          choice_text: "62",
+          choice_text: "61",
         },
         {
           choice_id: "D",
@@ -1144,7 +1144,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 50,
-      question_text: "Calculate 74 - 75.",
+      question_text: "Calculate 73 - 75.",
       choices: [
         {
           choice_id: "A",
@@ -1160,14 +1160,14 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "D",
-          choice_text: "0",
+          choice_text: "-2",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "D",
     },
     {
       question_id: 51,
-      question_text: "What is the product of 9 multiplied by 8?",
+      question_text: "What is the product of 15 multiplied by 8?",
       choices: [
         {
           choice_id: "A",
@@ -1179,18 +1179,18 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "C",
-          choice_text: "65",
+          choice_text: "120",
         },
         {
           choice_id: "D",
           choice_text: "72",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "C",
     },
     {
       question_id: 52,
-      question_text: "Divide 144 by 12.",
+      question_text: "Divide 121 by 11.",
       choices: [
         {
           choice_id: "A",
@@ -1209,15 +1209,15 @@ export const sample: QuestionsData = {
           choice_text: "13",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "B",
     },
     {
       question_id: 53,
-      question_text: "What is the value of 12 squared?",
+      question_text: "What is the value of 13 squared?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "142",
+          choice_text: "169",
         },
         {
           choice_id: "B",
@@ -1232,15 +1232,15 @@ export const sample: QuestionsData = {
           choice_text: "156",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 54,
-      question_text: "Calculate 90 ÷ 6.",
+      question_text: "Calculate 90 ÷ 30",
       choices: [
         {
           choice_id: "A",
-          choice_text: "14",
+          choice_text: "3",
         },
         {
           choice_id: "B",
@@ -1255,7 +1255,7 @@ export const sample: QuestionsData = {
           choice_text: "17",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "A",
     },
     {
       question_id: 55,
@@ -1282,7 +1282,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 56,
-      question_text: "Find the missing number: 8 + 99 = __.",
+      question_text: "Find the missing number: 12 * 12 = __.",
       choices: [
         {
           choice_id: "A",
@@ -1290,7 +1290,7 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "B",
-          choice_text: "167",
+          choice_text: "144",
         },
         {
           choice_id: "C",
@@ -1301,7 +1301,7 @@ export const sample: QuestionsData = {
           choice_text: "111",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "B",
     },
     {
       question_id: 57,
@@ -1329,11 +1329,11 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 58,
-      question_text: "What is the sum of 33 + 27?",
+      question_text: "What is the sum of 33 + 21?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "58",
+          choice_text: "54",
         },
         {
           choice_id: "B",
@@ -1352,15 +1352,15 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 59,
-      question_text: "What is  7x77?",
+      question_text: "What is  7x3?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "514",
+          choice_text: "14",
         },
         {
           choice_id: "B",
-          choice_text: "539",
+          choice_text: "21",
         },
         {
           choice_id: "C",
@@ -1375,7 +1375,7 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 60,
-      question_text: "What is 99x9?",
+      question_text: "What is 9x9?",
       choices: [
         {
           choice_id: "A",
@@ -1394,7 +1394,7 @@ export const sample: QuestionsData = {
           choice_text: "921",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
   ],
 };
