@@ -12,17 +12,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Get previous version
-        id: get_previous_version
-        run: echo ::set-output name=PREVIOUS_VERSION::$(git show -s --format=%s ${{ github.sha }} | grep -oP '(?<=version\s)[0-9]+\.[0-9]+\.[0-9]+')
-
       - name: Get current version
         id: get_version
         run: echo ::set-output name=VERSION::$(node -e "console.log(require('./package.json').version)")
 
+      - name: Get previous version
+        id: get_previous_version
+        run: echo ::set-output name=PREVIOUS_VERSION::$(git show -s --format=%s ${{ github.sha }} | grep -oP '(?<=version\s)[0-9]+\.[0-9]+\.[0-9]+')
+
       - name: Check if version is updated
         id: version_updated
-        run: echo ::set-output name=UPDATED::$(test "${{ steps.get_version.outputs.VERSION }}" != "${{ steps.get_previous_version.outputs.PREVIOUS_VERSION }}"; echo $?)
+        run: echo ::set-output name=UPDATED::$(node -e "console.log('${{ steps.get_version.outputs.VERSION }}' !== '${{ steps.get_previous_version.outputs.PREVIOUS_VERSION }}')")
 
       - name: Create Release
         id: create_release
@@ -31,7 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.get_version.outputs.VERSION }}
-          release_name: ${{ steps.get_version.outputs.VERSION }}
+          release_name: Zesty Website ${{ steps.get_version.outputs.VERSION }}
           draft: false
           prerelease: false
         if: steps.version_updated.outputs.UPDATED == 'true'
