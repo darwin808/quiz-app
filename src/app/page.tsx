@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { sample as testData } from "./constant";
 import dayjs from "dayjs";
 
+console.log(123);
 function shuffle(array: Question[]) {
   let currentIndex = array.length,
     randomIndex;
