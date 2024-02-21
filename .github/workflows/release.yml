@@ -16,6 +16,12 @@ jobs:
         id: get_version
         run: echo ::set-output name=VERSION::$(node -e "console.log(require('./package.json').version)")
 
+      - name: Changelog
+        uses: scottbrenner/generate-changelog-action@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -26,3 +32,5 @@ jobs:
           release_name: ${{ steps.get_version.outputs.VERSION }}
           draft: false
           prerelease: false
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
