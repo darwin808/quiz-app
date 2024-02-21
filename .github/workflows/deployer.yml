@@ -26,7 +26,7 @@ jobs:
           git fetch origin
           git checkout stage
           git pull
-          git merge origin/main --ff-only ${{ github.sha }}
+          git merge origin/main --no-ff ${{ github.sha }}
           git push origin stage
 
       - name: Update Dev Branch
@@ -37,5 +37,5 @@ jobs:
           git fetch origin
           git checkout dev
           git pull
-          git merge origin/main --ff-only ${{ github.sha }}
+          git merge origin/main --no-ff ${{ github.sha }}
           git push origin dev
