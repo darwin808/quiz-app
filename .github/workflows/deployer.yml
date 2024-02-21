@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Update Test Branch
+      - name: Update Stage Branch
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
@@ -26,5 +26,16 @@ jobs:
           git fetch origin
           git checkout stage
           git pull
-          git merge origin/main
+          git merge origin/main --ff-only ${{ github.sha }}
           git push origin stage
+
+      - name: Update Dev Branch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout main
+          git fetch origin
+          git checkout Dev
+          git pull
+          git merge origin/main --ff-only ${{ github.sha }}
+          git push origin Dev
