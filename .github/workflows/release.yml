@@ -1,9 +1,8 @@
 name: Create Release
-
 on:
   push:
     tags:
-      - "v*" # Trigger on tags that start with 'v'
+      - "*"
 
 jobs:
   create_release:
