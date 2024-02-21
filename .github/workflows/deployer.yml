@@ -1,0 +1,41 @@
+name: Deploy to Stage and Master
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Update Stage Branch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout main
+          git fetch origin
+          git checkout stage
+          git pull
+          git merge origin/main --no-ff ${{ github.sha }}
+          git push origin stage
+
+      - name: Update Dev Branch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout main
+          git fetch origin
+          git checkout dev
+          git pull
+          git merge origin/main --no-ff ${{ github.sha }}
+          git push origin dev

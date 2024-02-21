@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { sample as testData } from "./constant";
 
+console.log(1231);
 function shuffle(array: Question[]) {
   let currentIndex = array.length,
     randomIndex;
@@ -77,12 +78,12 @@ export default function Home() {
 
   const [localAnswer, setlocalAnswer] = useState<Choice | null>(null);
   const [answers, setAnswers] = useState<
-    | {
-        question_id: number;
-        choice_text: string;
-        choice_id: string;
-        correct_answer: string;
-      }[]
+    {
+      question_id: number;
+      choice_text: string;
+      choice_id: string;
+      correct_answer: string;
+    }[]
   >([]);
 
   useEffect(() => {

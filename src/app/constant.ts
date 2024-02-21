@@ -4,96 +4,95 @@ export const sample: QuestionsData = {
   questions: [
     {
       question_id: 1,
-      question_text: "What is the opposite of 'happy'?",
+      question_text: "What is the result of 8 ÷ 2 * 4?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Sad",
+          choice_text: "16",
         },
         {
           choice_id: "B",
-          choice_text: "Excited",
+          choice_text: "4",
         },
         {
           choice_id: "C",
-          choice_text: "Joyful",
+          choice_text: "10",
         },
         {
           choice_id: "D",
-          choice_text: "Angry",
+          choice_text: "12",
         },
       ],
       correct_answer: "A",
     },
     {
       question_id: 2,
-      question_text: "Which word means 'a large body of water'?",
+      question_text: "What is the result of 5 + 3 * 2 - 4 ÷ 2?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Ocean",
+          choice_text: "9",
         },
         {
           choice_id: "B",
-          choice_text: "Mountain",
+          choice_text: "10",
         },
         {
           choice_id: "C",
-          choice_text: "Forest",
+          choice_text: "8",
         },
         {
           choice_id: "D",
-          choice_text: "Desert",
+          choice_text: "7",
         },
       ],
       correct_answer: "A",
     },
     {
       question_id: 3,
-      question_text: "Identify the verb in the sentence: 'The cat sleeps.'",
+      question_text: "What is the result of 12 - 3 * 2 + 8 ÷ 4?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Cat",
+          choice_text: "10",
         },
         {
           choice_id: "B",
-          choice_text: "Sleeps",
+          choice_text: "9",
         },
         {
           choice_id: "C",
-          choice_text: "The",
+          choice_text: "8",
         },
         {
           choice_id: "D",
-          choice_text: "None",
+          choice_text: "6",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "C",
     },
     {
       question_id: 4,
-      question_text:
-        "Choose the correct form of the verb: 'She ____ to school every day.'",
+      question_text: "Choose the correct spelling:",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Goes",
+          choice_text: "Recieve",
         },
         {
           choice_id: "B",
-          choice_text: "Go",
+          choice_text: "Receive",
         },
         {
           choice_id: "C",
-          choice_text: "Went",
+          choice_text: "Receve",
         },
         {
           choice_id: "D",
-          choice_text: "Gone",
+          choice_text: "Recive",
         },
       ],
-      correct_answer: "A",
+      correct_answer: "B",
     },
     {
       question_id: 5,
@@ -101,11 +100,11 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "Childs",
+          choice_text: "Childes",
         },
         {
           choice_id: "B",
-          choice_text: "Childen",
+          choice_text: "Childs",
         },
         {
           choice_id: "C",
@@ -113,34 +112,35 @@ export const sample: QuestionsData = {
         },
         {
           choice_id: "D",
-          choice_text: "Childs",
+          choice_text: "Childies",
         },
       ],
       correct_answer: "C",
     },
     {
       question_id: 6,
-      question_text: "Which word means 'opposite of old'?",
+      question_text: "Choose the correct sentence:",
       choices: [
         {
           choice_id: "A",
-          choice_text: "Ancient",
+          choice_text: "He goed to the store yesterday.",
         },
         {
           choice_id: "B",
-          choice_text: "Young",
+          choice_text: "She runned quickly in the race.",
         },
         {
           choice_id: "C",
-          choice_text: "Elderly",
+          choice_text: "They sings beautifully.",
         },
         {
           choice_id: "D",
-          choice_text: "Aged",
+          choice_text: "We ate dinner at 8 o'clock.",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "D",
     },
+
     {
       question_id: 7,
       question_text: "Identify the adverb in the sentence: 'She runs quickly.'",
@@ -863,7 +863,7 @@ export const sample: QuestionsData = {
           choice_text: "17",
         },
       ],
-      correct_answer: "B",
+      correct_answer: "C",
     },
     {
       question_id: 38,
@@ -871,7 +871,7 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "10",
+          choice_text: "100",
         },
         {
           choice_id: "B",
@@ -1047,7 +1047,7 @@ export const sample: QuestionsData = {
           choice_text: "9",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 46,
@@ -1074,26 +1074,26 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 47,
-      question_text: "Find the missing number: 9 + 6 = __.",
+      question_text: "Find the missing number: 9 x 10 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "15",
+          choice_text: "150",
         },
         {
           choice_id: "B",
-          choice_text: "16",
+          choice_text: "160",
         },
         {
           choice_id: "C",
-          choice_text: "17",
+          choice_text: "90",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "89",
         },
       ],
-      correct_answer: "A",
+      correct_answer: "C",
     },
     {
       question_id: 48,
@@ -1213,23 +1213,23 @@ export const sample: QuestionsData = {
     },
     {
       question_id: 53,
-      question_text: "What is the value of 7 squared?",
+      question_text: "What is the value of 12 squared?",
       choices: [
         {
           choice_id: "A",
-          choice_text: "42",
+          choice_text: "142",
         },
         {
           choice_id: "B",
-          choice_text: "45",
+          choice_text: "145",
         },
         {
           choice_id: "C",
-          choice_text: "49",
+          choice_text: "144",
         },
         {
           choice_id: "D",
-          choice_text: "56",
+          choice_text: "156",
         },
       ],
       correct_answer: "C",
@@ -1263,7 +1263,7 @@ export const sample: QuestionsData = {
       choices: [
         {
           choice_id: "A",
-          choice_text: "16",
+          choice_text: "20",
         },
         {
           choice_id: "B",
@@ -1278,30 +1278,30 @@ export const sample: QuestionsData = {
           choice_text: "19",
         },
       ],
-      correct_answer: "C",
+      correct_answer: "A",
     },
     {
       question_id: 56,
-      question_text: "Find the missing number: 8 + 9 = __.",
+      question_text: "Find the missing number: 8 + 99 = __.",
       choices: [
         {
           choice_id: "A",
-          choice_text: "15",
+          choice_text: "151",
         },
         {
           choice_id: "B",
-          choice_text: "16",
+          choice_text: "167",
         },
         {
           choice_id: "C",
-          choice_text: "17",
+          choice_text: "107",
         },
         {
           choice_id: "D",
-          choice_text: "18",
+          choice_text: "111",
         },
       ],
-      correct_answer: "D",
+      correct_answer: "C",
     },
     {
       question_id: 57,
