@@ -35,7 +35,7 @@ jobs:
           git config --local user.name "GitHub Actions"
           git checkout main
           git fetch origin
-          git checkout Dev
+          git checkout dev
           git pull
           git merge origin/main --ff-only ${{ github.sha }}
-          git push origin Dev
+          git push origin dev
