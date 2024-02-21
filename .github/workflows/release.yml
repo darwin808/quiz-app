@@ -2,11 +2,9 @@ name: Create Release
 
 on:
   push:
-    tags-ignore:
-      - "*" # Ignore all tags, this will prevent duplicate triggers
-  create:
     tags:
-      - "*" # Trigger on any new tag
+      - "v*" # Trigger on tags that start with 'v'
+
 jobs:
   create_release:
     runs-on: ubuntu-latest
