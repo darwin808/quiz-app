@@ -1,0 +1,25 @@
+name: Deploy to Stage and Master
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Update Test Branch
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git checkout main
+          git fetch origin
+          git checkout stage
+          git pull
+          git merge origin/main
+          git push origin stage
