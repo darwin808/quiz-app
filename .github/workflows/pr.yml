@@ -1,0 +1,40 @@
+name: Create Pull Request
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_pull_request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create branch
+        run: git checkout -b feature-branch
+
+      # Steps for making changes, testing, linting, documentation updates, etc.
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "github-actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git commit -am "Add feature"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: feature-branch
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: feature-branch
+          title: "Feature: Description of changes"
+          base: beta
+          body: "This pull request addresses the following..."
