@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { sample as testData } from "./constant";
 
-console.log(1231123123);
+console.log(12311231231231);
 function shuffle(array: Question[]) {
   let currentIndex = array.length,
     randomIndex;
