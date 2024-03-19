@@ -3,7 +3,7 @@ name: Create Pull Request123
 on:
   push:
     branches:
-      - dev
+      - dev1
 
 jobs:
   create_pull_request:
