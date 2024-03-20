@@ -23,7 +23,7 @@ jobs:
     needs: [job1, job2]
     if: ${{ success() }}
     steps:
-      - name: Checkout code
+      - name: Checkout code123
         uses: actions/checkout@v4
 
       - name: Step 1 of Job 3
