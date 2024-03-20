@@ -1,0 +1,25 @@
+name: Parallel Jobs Workflow
+
+on:
+  push:
+    branches:
+      - dev1
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of Job 1
+        run: echo "This is Step 1 of Job 1"
+
+      - name: Step 2 of Job 1
+        run: echo "This is Step 2 of Job 1"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 of Job 2
+        run: echo "This is Step 1 of Job 2"
+
+      - name: Step 2 of Job 2
+        run: echo "This is Step 2 of Job 2"
