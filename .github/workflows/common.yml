@@ -1,9 +1,7 @@
 name: Common
 
 on:
-  push:
-    branches:
-      - dev1
+  workflow_call:
 
 jobs:
   create_pr:
