@@ -1,0 +1,31 @@
+name: Common
+
+on:
+  workflow_call:
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check if PR exists
+        id: check-pr-if-exist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          prs=$(gh pr list \
+              --repo "$GITHUB_REPOSITORY" \
+              --head 'dev1' \
+              --base 'beta' \
+              --json title \
+              --jq 'length')
+          if ((prs > 0)); then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: create pull request
+        run: gh pr create -B beta -H dev1 --title 'This is the title' --body 'This is the body' --label 'bug'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

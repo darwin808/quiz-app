@@ -1,22 +1,18 @@
-name: Create PR from dev to beta
-
-on:
-  push:
-    branches:
-      - dev1
-
-jobs:
-  create_pr:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Automated PR from dev to beta"
-          title: "Automated PR from dev to beta"
-          body: "This is an automated pull request from the dev branch to the beta branch."
-          branch: beta
+# name: Create PR from dev to beta
+#
+# on:
+#   push:
+#     branches:
+#       - dev1
+#
+# jobs:
+#   create_pr:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
+#
+#       - name: create pull request
+#         run: gh pr create -B beta -H dev1 --title 'This is the title' --body 'This is the body' --label 'bug'
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
