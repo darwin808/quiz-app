@@ -12,11 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Automated PR from dev to beta"
-          title: "Automated PR from dev to beta"
-          body: "This is an automated pull request from the dev branch to the beta branch."
-          branch: beta
+      - name: create pull request
+        run: gh pr create -B dev1 -H beta --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
