@@ -23,6 +23,9 @@ jobs:
     needs: [job1, job2]
     if: ${{ success() }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Step 1 of Job 3
         uses: ./.github/workflows/common.yml#create_pr
 
