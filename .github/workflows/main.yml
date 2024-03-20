@@ -65,6 +65,6 @@ jobs:
 
       - name: create pull request
         if: "!steps.check.outputs.skip"
-        run: gh pr create -B beta -H dev1 --title '🔥Merge:from `dev1` to `beta`' --fill-verbose  --label 'bug'
+        run: gh pr create -B beta -H dev1 --title '🔥Merge:from `dev1123` to `beta`' --fill-verbose  --label 'bug'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
